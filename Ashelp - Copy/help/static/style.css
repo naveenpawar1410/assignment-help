@@ -21,7 +21,7 @@ body
 }
 #card2
 {
-    height: 530px;
+    height: 550px!important;
     width: 400px;
     background-color: white;
     position: absolute;
