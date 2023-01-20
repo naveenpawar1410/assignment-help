@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>FEEDBACK</title>
+    <style>
+        
+        
+        body
+        {
+            background: #3494E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .card
+        {
+            width:100%;
+            height:100%;
+            position:relative
+        }
+        .ab
+        {
+            
+            margin-top:10px;
+            background-color: white;
+            width: 420px;
+            height:700px;
+            border-radius: 10px;
+            position: absolute;
+            margin-left: 500px;
+            
+        }
+        
+ input[type='submit']:hover
+ {
+color:black;
+transform: scale(1.1);
+transition: 2s;
+ }
+ .cd{
+    height:82px;
+    width:200px;
+    background-color: aliceblue;
+    float:right;
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding-top: 5px;
+    
+ }
+ .cd img src :hover{
+    background-color: aquamarine;
+ }
+ .xy{
+    height:75px;
+    width:200px;
+    background-color: aliceblue;
+    float:right;
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: 130px;
+    border-radius: 5px;
+    padding-top: 5px;
+    
+ }
+ /* button{
+    height: 40px;
+    width:120px;
+    margin-top: 5px;
+    border: #EC6EAD;
+    margin-left:25px;
+ } */
+    </style>
+</head>
+
+<body>
+    <center>
+<div class="card">
+
+    <div class="ab">
+    <h1 style= "padding-top: 25px;color:#15548b">*FEEDBACK*</h1>
+    <br>
+    <br>
+    
+    <form action="" method="post">
+        {%csrf_token%}
+        
+             <input type="text" name="name" placeholder="Enter Name" style="height:30px;width:300px;margin-top: 15px;border-top:0px;border-left:0px;border-right: 0px;" required><br>
+
+             <input type="email" name="email" placeholder="Enter Email" style="height:30px;width:300px;margin-top: 15px;border-top:0px;border-left:0px;border-right: 0px;" required><br>
+
+             <input type="number" name="contact" placeholder=" Enter Contact" style="height:30px;width:300px;margin-top: 15px;border-top:0px;border-left:0px;border-right: 0px;" required><br>
+
+             <input type="text" name="course" placeholder=" Enter Course" style="height:30px;width:300px;margin-top: 15px;border-top:0px;border-left:0px;border-right: 0px;" required><br>
+
+             <select name="mode" style="height:30px;width:300px;margin-top: 15px;border-top:0px;border-left:0px;border-right: 0px;">
+                <option value="online"> Online</option>
+                <option value="offline">Offine</option>
+             </select><br>
+             <select name="feedback" id="" style="height:30px;width:300px;margin-top: 15px;border-top:0px;border-left:0px;border-right: 0px;">
+                <option value="Excellent">Excellent</option>
+                <option value="Good"> Good</option>
+                <option value="Bad">Bad</option>
+                </select><br>
+
+             <select name="rating" id="" style="height:30px;width:300px;margin-top: 15px;border-top:0px;border-left:0px;border-right: 0px;">
+                <option>5</option>
+                <option>4</option>
+                <option>3</option>
+                <option>2</option>
+                <option>1</option>
+             </select><br>
+
+
+             <textarea name="desc" rows="5"  cols="10" placeholder="Enter Descraption" style="height:30px;width:300px;margin-top: 15px;border-top:0px;border-left:0px;border-right: 0px;"></textarea>
+
+
+
+
+            <b> <input type="submit" value="Submit" style="height:50px;width:320px;margin-top:55px;border-radius: 5px; background: #3494E6;  /* fallback for old browsers */
+             background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+             background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+             color:white;position: sticky;"></b><br>
+        
+    </form>
+    </div>
+    </center>
+    <div class="cd">
+        
+     <center> <b style="color:#EC6EAD;"> Admin Login</b><br>
+       <a href="/login/"> <img src="https://www.iconpacks.net/icons/1/free-user-login-icon-305-thumb.png" style="height:60px;width:70px;margin-top:5px;"/></a>
+    </center>
+    </div>
+    <div class="xy">
+        <center> <b style="color:#EC6EAD;">View Feedback</b><br>
+            <a href="/review/"> <img src="https://images.vexels.com/media/users/3/152329/isolated/preview/187b98a860eb7ec2838aac1a5b4a15eb-augmented-reality-visor-icon.png" style="height:50px;width:70px;margin-top:5px;"/></a>
+         </center>
+
+    </div>
+
+
+
+</div>
+</body>
+</body>
+</html>
